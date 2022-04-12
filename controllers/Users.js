@@ -12,6 +12,9 @@ export const loginValidation = (req, res, next) => {
   }
 };
 
+export const indexPage = (req, res) => {
+  res.render('index');
+};
 export const getData = (req, res) => {
   res.render('tampil-data', { dataUsers });
 };
