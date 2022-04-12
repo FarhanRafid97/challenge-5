@@ -1,23 +1,13 @@
-const express = require('express');
+import express from 'express';
 const app = express();
+import router from './routes/Router.js';
 
 app.set('view engine', 'ejs');
-
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.render('index', {
-    nama: 'farhan',
-    msg: 'keep trying and outsmart everyone',
-  });
-});
-app.get('/greet', (req, res) => {
-  const nama = req.query.nama || 'NULL';
-  res.render('index', { nama, title: 'greeting' });
-});
-app.get('/register', (req, res) => {
-  const nama = req.query.nama || 'NULL';
-  res.render('register', { nama, title: 'greeting' });
-});
+app.use(router);
+
 const port = 8000;
 app.listen(port, () => console.log(`port berjalan ${port}`));

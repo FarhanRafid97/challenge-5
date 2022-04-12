@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        th{
+            padding:5px;
+        }
+        td{
+            padding:5px;
+        }
+    </style>
+  </head>
+  <body>
+  
+    <a href="/data-json">Data Json</a>
+    <table border="1" >
+      <thead>
+        <tr>
+          <th>nama</th>
+          <th>email</th>
+          <th>password</th>
+        </tr>
+        <tbody>
+            
+                <% dataUsers.forEach(user => { %>
+                    <tr>
+                    <td><%=user.nama %> </td>
+                    <td><%=user.email %> </td>
+                    <td><%=user.password %> </td>
+                    
+                </tr>
+                <% }) %>
+            
+        </tbody>
+      </thead>
+    </table>
+    <form action="/data" method="post">
+      <button type="submit">Logout</button>
+    </form>
+  </body>
+</html>
