@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  background-color: aqua;
+  height: 100vh;
+}
+
+.form-register {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+}
+form input {
+  padding: 5px 0;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+form button {
+  width: 40%;
+  margin: auto;
+}
