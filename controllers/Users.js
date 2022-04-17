@@ -15,8 +15,14 @@ export const loginValidation = (req, res, next) => {
 export const indexPage = (req, res) => {
   res.render('index');
 };
+export const homePage = (req, res) => {
+  res.render('home');
+};
+export const gamePage = (req, res) => {
+  res.render('game');
+};
 export const getData = (req, res) => {
-  res.render('tampil-data', { dataUsers });
+  res.render('data-users', { dataUsers });
 };
 
 export const registerUser = (req, res) => {
@@ -44,7 +50,7 @@ export const loginUserPost = (req, res) => {
     return res.redirect('/login');
   } else {
     isLogin = true;
-    res.redirect('/data');
+    res.redirect('/home');
     console.log(isLogin);
   }
 };

@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9c835f;
+}
+.back {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 25px;
+}
+.back a {
+  font-size: 72px;
+  font-weight: 600;
+  color: #724c21;
+}
+.back img {
+  width: 72px;
+}
+.back p {
+  font-size: 36px;
+  color: #f9b23d;
+}
+.game-section {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 650px;
+  margin: auto;
+  padding: 15px 55px 10px;
+  margin-top: 25px;
+  row-gap: 15px;
+}
+.player-computer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.player-computer {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.batu-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.batu-section img {
+  display: flex;
+  margin: auto;
+  width: 128px;
+}
+.batu-section .batuSaya:hover {
+  transform: rotate(30deg);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.kertas-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  align-items: center;
+}
+.vs {
+  width: 160px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  font-size: 144px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #bd0000;
+  border-radius: 15px;
+}
+.kertas-section img {
+  width: 115px;
+  display: flex;
+  margin: auto;
+}
+.kertas-section .kertasSaya:hover {
+  transform: rotate(30deg);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gunting-section img {
+  width: 134px;
+  display: flex;
+  margin: auto;
+  transform: rotate(20deg);
+}
+.gunting-section .guntingSaya:hover {
+  transform: rotate(40deg);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.gunting-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.refresh {
+  display: flex;
+  margin: auto;
+}
+
+.refresh img {
+  width: 60px;
+}
+
+/* .compBatu {
+  padding: 25px;
+} */
+.paddingComp {
+  display: flex;
+  width: 203px;
+  height: 174px;
+  border-radius: 15px;
+}
+.paddingPlayer {
+  display: flex;
+  width: 203px;
+  height: 174px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.games {
+  position: relative;
+}
+
+.scorePlayer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 225px;
+  left: 50px;
+  margin: auto 0;
+}
+.scorePlayer h3 {
+  font-size: 24px;
+}
+.scorePlayer div {
+  font-size: 24px;
+}
+.scoreComp {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 225px;
+  right: 50px;
+  margin: auto 0;
+}
+.scoreComp h3 {
+  font-size: 24px;
+}
+.scoreComp div {
+  font-size: 24px;
+}
+
+.versus {
+  width: 271px;
+  height: 167px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

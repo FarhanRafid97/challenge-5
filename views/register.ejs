@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/register.css" />
   </head>
   <body>
-    <div class="form-register">
+    <div class="back">
+      <a href="/"><i class="fa-solid fa-delete-left"></i></a>
+    </div>
+    <div class="form">
       <form action="/register" method="post">
-        <label for="">nama</label>
-        <input type="nama" name="nama" placeholder="nama" autocomplete="off" />
-        <label for="">email</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="email"
-          autocomplete="off"
-        />
-        <label for="">password</label>
-        <input
-          type="password"
-          name="password"
-          placeholder="passowrd"
-          autocomplete="off"
-        />
-        <button type="submit">Submit</button>
-        <a href="/login">Login</a>
+        <div class="style-form">
+          <h3>Register</h3>
+          <input
+            name="nama"
+            placeholder=" "
+            class="username"
+            autoComplete="off"
+          />
+          <label class="labelUsername">Username</label>
+          <input
+            name="email"
+            placeholder=" "
+            class="email"
+            autoComplete="off"
+          />
+          <label class="LabelEmail">Email</label>
+
+          <input
+            name="password"
+            class="password"
+            placeholder=" "
+            autoComplete="off"
+          />
+          <label class="labelPassword">Password</label>
+
+          <button class="submit" type="submit">Submit</button>
+          <a href="/login" class="register">Login</a>
+        </div>
       </form>
     </div>
   </body>

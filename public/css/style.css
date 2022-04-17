@@ -1,0 +1,1285 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    --font-h1h2h3: 'Bebas Neue', cursive;
+    --font-selain: font-family: 'Open Sans', sans-serif;
+
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hamburger {
+    display: none;
+}
+
+.header1 {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.35);
+    z-index: 99;
+}
+
+.header-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header-container .logo {
+    margin-right: 120px;
+    color: white;
+    font-size: 34px;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+
+.nav-menu1 a {
+    color: white;
+    margin-right: 25px;
+    letter-spacing: 0.2rem;
+    font-family: var(--font-h1h2h3);
+    text-decoration: none;
+}
+
+.login a {
+    color: white;
+    margin-left: 10px;
+    font-family: var(--font-h1h2h3);
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+}
+
+.nav-menu1 {
+    display: flex;
+    align-items: center;
+
+}
+.logOut{
+    background-color: gold;
+    padding: 2px 10px;
+    border: none;
+    
+}
+
+
+
+
+.section-1 {
+    display: flex;
+    background-image: url('../assets/main-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    flex-direction: column;
+
+
+
+}
+
+.section1-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.the-story {
+    flex: 1;
+    color: white;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1px;
+    font-family: var(--font-selain);
+    justify-content: flex-end;
+    height: 100%;
+
+
+
+}
+
+.the-story p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 1px;
+
+}
+
+.the-story i {
+    font-size: 28px;
+}
+
+.section1-container h1 {
+    font-family: var(--font-h1h2h3);
+    font-size: 80px;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+
+.section1-container p {
+    margin: 25px 0;
+    font-family: var(--font-selain);
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.1rem;
+
+}
+
+.section1-container .btn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-2 {
+    display: flex;
+    background-image: url('../assets/the-games-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+
+}
+
+.container-game {
+    margin: auto;
+    display: flex;
+    height: 600px;
+
+}
+
+.text-section2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: end;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.text-section2 p {
+    font-family: var(--font-selain);
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+
+    margin-right: 95px;
+    color: white;
+}
+
+.text-section2 h1 {
+    
+    font-family: var(--font-selain);
+    font-size: 38px;
+    letter-spacing: 0.1rem;
+    line-height: 15px;
+    color: white;
+
+}
+
+.slide {
+    display: flex;
+    flex: 3;
+    align-items: center;
+}
+.gambar-slide{
+    flex: 1;
+    width: 100%;
+}
+.gambar-slide img{
+    width: 100%;
+}
+.section-3 {
+    display: flex;
+    background-image: url('../assets/features.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+.container-feature {
+    display: flex;
+    margin: auto;
+
+    height: 600px;
+
+    justify-content: flex-end;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-left: 70px;
+    justify-content: center;
+}
+
+.feature-title {
+    color: white;
+    margin: 60px 0;
+    font-family: var(--font-selain);
+}
+
+.feature-title h1 {
+    line-height: 25px;
+    letter-spacing: 0.1rem;
+
+}
+
+.feature-title p {
+    letter-spacing: 0.1rem;
+}
+
+
+
+.stepper ul {
+    position: relative;
+    width: 400px;
+}
+
+.traditional {
+    list-style-type: none;
+    letter-spacing: 0.1rem;
+}
+
+.traditional h3 {
+    color: orange;
+}
+
+.traditional p {
+    color: white;
+}
+
+.traditional:before {
+    position: absolute;
+    content: ".";
+    font-size: 120px;
+    vertical-align: middle;
+    line-height: 20px;
+    left: -5px;
+    top: -35px;
+    color: white;
+
+}
+
+.traditional:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 105px;
+    background-color: white;
+    top: 18px;
+    left: 6.5px;
+    z-index: 1;
+}
+
+.suit {
+    list-style-type: none;
+    margin-top: 25px;
+    letter-spacing: 0.1rem;
+}
+
+.suit h3 {
+    color: orange;
+}
+
+.suit:before {
+    position: absolute;
+    content: "o";
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 20px;
+    left: 0;
+    bottom: 70px;
+    color: white;
+
+}
+
+.tbd {
+    margin-top: 25px;
+    list-style-type: none;
+    letter-spacing: 0.1rem;
+}
+
+.tbd h3 {
+    color: orange;
+}
+
+.tbd:before {
+    position: absolute;
+    content: "o";
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 20px;
+    left: 0;
+    bottom: 10px;
+    color: white;
+}
+
+.section-4 {
+    display: flex;
+    background-image: url('../assets/requirements.png');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+.container-req {
+    display: flex;
+    margin: auto;
+    height: 600px;
+
+    color: white;
+    flex-direction: column;
+
+}
+
+.container-req p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.system-req {
+    width: 600px;
+    border-radius: 1px solid white;
+    height: 500px;
+    margin-left: 40px;
+
+
+}
+
+.system-req h1 {
+    font-family: var(--font-selain);
+    font-size: 50px;
+    letter-spacing: 0.2rem;
+    margin-left: 10px;
+    margin-bottom: 25px;
+
+}
+
+.spec ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.spec ul li {
+    padding: 10px;
+    width: 260px;
+    border: 1px solid white;
+    list-style-type: none;
+
+
+}
+
+.spec ul li h3 {
+    color: orange;
+
+}
+
+.spec ul li p {
+    color: white;
+}
+
+.spec ul li:last-child {
+    width: 520px;
+}
+
+.section-5 {
+    display: flex;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
+}
+
+.container-score {
+    height: 600px;
+    margin: auto;
+    display: flex;
+    padding: 0;
+}
+
+.bagian1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+
+.top-scores {
+    margin: 0 auto;
+    width: 350px;
+    color: white;
+}
+
+.top-scores h3 {
+    font-size: 54px;
+    font-family: var(--font-selain);
+    letter-spacing: 0.1rem;
+}
+
+.top-scores p {
+    font-size: 14px;
+    font-family: var(--font-selain);
+    letter-spacing: 0.1rem;
+}
+
+.btn-see-more {
+    width: 200px;
+    height: 40px;
+}
+
+.bagian2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.testimoni {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+
+}
+
+
+.testimoni-1 {
+    display: flex;
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 100px;
+
+
+
+}
+
+.testimoni-2 {
+    width: 400px;
+    border-radius: 15px;
+    margin: 40px 0;
+
+}
+
+.testimoni-3 {
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 100px;
+
+}
+
+.section-6 {
+    display: flex;
+    background-color: gray;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    flex-direction: column;
+
+}
+
+.container-subscribe {
+    height: 600px;
+    margin: auto;
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.subscribe-bagian {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    font-family: var(--font-selain);
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+
+
+.subscribe h3 {
+    font-size: 55px;
+}
+
+.title-subscribe {
+    width: 140px;
+}
+
+.email {
+    margin-top: 25px;
+}
+
+.input-email {
+    width: 320px;
+    height: 50px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.75);
+    padding-left: 25px;
+}
+
+.btn-sub {
+    width: 200px;
+    height: 50px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+
+}
+
+.footer1 {
+    width: 100%;
+    display: flex;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+
+.socmed {
+    flex: 1;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.socmed-menu {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.menu-footer {
+    flex: 2.1;
+    display: flex;
+    column-gap: 40px;
+    justify-content: flex-end;
+    margin-right: 45px;
+}
+
+.footer-menu {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.copyright {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
+
+.copyright p:nth-child(2) {
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+
+    .text-section2 {
+        padding-top: 65px;
+
+    }
+
+    .text-section2 p {
+        font-size: 28px;
+        margin-right: 0;
+
+    }
+
+    .text-section2 h1 {
+        font-size: 45px;
+        margin-right: 5px;
+
+    }
+
+    .slide {
+        flex: 2.2;
+    }
+
+    .email input {
+        width: 250px;
+    }
+
+    .email button {
+        width: 190px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .section1-container h1 {
+        font-size: 58px;
+
+    }
+
+    .section1-container p {
+        font-size: 14px;
+    }
+
+    .tinggi {
+        height: 100vh;
+    }
+
+    .text-section2 {
+        padding-top: 125px;
+    }
+
+    .text-section2 p {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .text-section2 h1 {
+        font-size: 30px;
+        margin-right: 5px;
+
+    }
+
+    .feature-title p {
+        font-size: 12px;
+        margin-left: 80px;
+
+    }
+
+    .feature-title {
+        margin-bottom: 25px;
+    }
+
+    .feature-title h1 {
+        font-size: 34px;
+        margin-left: 80px;
+
+    }
+
+
+
+    .stepper ul li h3 {
+        margin-left: 80px;
+        font-size: 20px;
+    }
+
+    .stepper ul li p {
+        font-size: 12px;
+        margin-left: 80px;
+    }
+
+    .traditional:after {
+        left: 80px;
+        height: 80px;
+    }
+
+    .traditional:before {
+        left: 69px;
+
+    }
+
+    .suit::before {
+        left: 74px;
+        top: 90px;
+    }
+
+    .tbd::before {
+        left: 74px;
+        top: 140px;
+    }
+
+    .title-req {
+        text-align: center;
+        margin: 0;
+    }
+
+    .title-req h1 {
+        font-size: 38px;
+    }
+
+    .spec {
+        margin-left: 35px;
+    }
+
+    .spec h3 {
+        font-size: 20px;
+    }
+
+    .spec p {
+        font-size: 16px;
+    }
+
+    .system-req {
+        justify-content: center;
+    }
+
+    .container-req {
+        justify-content: center;
+
+    }
+
+    .testimoni img {
+        width: 300px;
+    }
+
+    .top-scores {
+        width: 300px;
+    }
+
+    .top-scores h3 {
+        font-size: 36px;
+    }
+
+    .top-scores p {
+        font-size: 14px;
+    }
+
+    .btn-see-more {
+        width: 150px;
+    }
+
+    .title-subscribe {
+        font-size: 12px;
+        width: 180px;
+
+    }
+
+    .subscribe h3 {
+        font-size: 32px;
+    }
+
+    .text-subscribe {
+        font-size: 12px;
+    }
+
+    .email input {
+        width: 200px;
+    }
+
+    .email button {
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .menu-footer {
+        column-gap: 23px;
+    }
+
+    .footer-menu {
+        font-size: 14px;
+    }
+
+    .pkesatu {
+        font-size: 12px;
+    }
+
+    .pkedua {
+        font-size: 10px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+}
+
+@media(max-width: 767px) {
+    .section1-container h1 {
+        font-size: 50px;
+    }
+
+    .section1-container p {
+        font-size: 12px;
+    }
+
+    .tinggi {
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container-game {
+        flex-direction: column;
+
+    }
+
+    .text-section2 {
+
+
+        margin: auto;
+
+    }
+
+    .text-section2 p {
+        font-size: 24px;
+
+
+    }
+
+    .text-section2 h1 {
+        font-size: 24px;
+
+
+    }
+
+    .feature-title p {
+        font-size: 18px;
+        margin-left: 140px;
+
+    }
+
+    .feature-title {
+        margin-bottom: 45px;
+    }
+
+    .feature-title h1 {
+
+        font-size: 52px;
+        margin-left: 140px;
+
+    }
+
+
+
+    .stepper ul li h3 {
+        margin-left: 140px;
+        font-size: 20px;
+    }
+
+    .stepper ul li p {
+        margin-left: 140px;
+        font-size: 12px;
+
+    }
+
+    .traditional:after {
+        left: 145px;
+        height: 102px;
+    }
+
+    .traditional:before {
+        left: 134px;
+
+    }
+
+    .suit::before {
+        left: 138.5px;
+        top: 110px;
+    }
+
+    .tbd::before {
+        left: 138.8px;
+        top: 158px;
+    }
+
+
+    .title-req {
+        display: flex;
+
+    }
+
+    .title-req h1 {
+
+        font-size: 30px;
+
+
+    }
+
+    .spec ul {
+        margin-right: 50px;
+    }
+
+    .spec ul li {
+        width: 250px;
+
+    }
+
+    .spec ul li:nth-child(5) {
+        width: 500px;
+    }
+
+
+    .spec h3 {
+        font-size: 16px;
+    }
+
+    .spec p {
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    .system-req {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0;
+
+    }
+
+    .container-req {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+    .testimoni img {
+        width: 210px;
+
+    }
+
+    .testimoni-1 {
+        margin-left: 30px;
+    }
+
+    .testimoni-3 {
+        margin-left: 30px;
+    }
+
+    .top-scores {
+        width: 290px;
+    }
+
+    .top-scores h3 {
+        font-size: 28px;
+    }
+
+    .top-scores p {
+        font-size: 12px;
+    }
+
+    .btn-see-more {
+        width: 150px;
+    }
+
+    .subscribe-bagian {
+        flex-basis: 60%;
+    }
+
+    .title-subscribe {
+        font-size: 14px;
+        width: 180px;
+
+    }
+
+    .subscribe h3 {
+        font-size: 38px;
+    }
+
+    .text-subscribe {
+        font-size: 18px;
+
+    }
+
+    .email input {
+        width: 180px;
+        font-size: 10px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .email button {
+        width: 110px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .menu-footer {
+        column-gap: 20px;
+    }
+
+    .footer-menu {
+        font-size: 9px;
+    }
+
+    .socmed-menu {
+        font-size: 14px;
+    }
+
+    .pkesatu {
+        font-size: 8px;
+    }
+
+    .pkedua {
+        font-size: 6px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+}
+
+@media(max-width: 575px) {
+    .nav-menu1 .logo {
+        font-size: 18px;
+    }
+
+    .login a {
+        font-size: 12px;
+    }
+
+    .section1-container h1 {
+        font-size: 44px;
+    }
+
+    .section1-container p {
+        font-size: 12px;
+    }
+
+    .section-1 .btn {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .tinggi {
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+    .slide {
+        width: 400px;
+        margin: auto;
+    }
+
+
+
+    .text-section2 p {
+        font-size: 20px;
+        margin-left: 10px;
+
+    }
+
+    .text-section2 h1 {
+        font-size: 24px;
+        margin-right: 5px;
+
+    }
+
+    .feature-title p {
+        font-size: 12px;
+        margin-left: 190px;
+
+    }
+
+    .feature-title {
+        margin-bottom: 10px;
+    }
+
+    .feature-title h1 {
+        font-size: 34px;
+        margin-left: 190px;
+
+    }
+
+
+
+    .stepper ul li h3 {
+        margin-left: 160px;
+        font-size: 18px;
+    }
+
+    .stepper ul li p {
+        font-size: 12px;
+        margin-left: 160px;
+    }
+
+    .traditional:after {
+        left: 165px;
+        height: 92px;
+    }
+
+    .traditional:before {
+        left: 154px;
+
+    }
+
+    .suit::before {
+        left: 158.5px;
+        top: 104px;
+    }
+
+    .tbd::before {
+        left: 158.8px;
+        top: 150px;
+    }
+
+
+    .title-req {
+        display: flex;
+
+    }
+
+    .title-req h1 {
+
+        font-size: 26px;
+
+
+    }
+
+
+
+    .spec ul li {
+        width: 200px;
+    }
+
+    .spec ul li:nth-child(5) {
+        width: 400px;
+    }
+
+
+    .spec h3 {
+        font-size: 16px;
+    }
+
+    .spec p {
+        font-size: 12px;
+    }
+
+    .system-req {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .container-req {
+        justify-content: center;
+
+    }
+
+
+
+    .testimoni img {
+        width: 190px;
+
+    }
+
+    .testimoni-1 {
+        margin-left: 10px;
+    }
+
+    .testimoni-3 {
+        margin-left: 10px;
+    }
+
+    .top-scores {
+        width: 220px;
+    }
+
+    .top-scores h3 {
+        font-size: 22px;
+    }
+
+    .top-scores p {
+        font-size: 8px;
+    }
+
+    .btn-see-more {
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .title-subscribe {
+        font-size: 12px;
+        width: 180px;
+
+    }
+
+    .subscribe h3 {
+        font-size: 26px;
+    }
+
+    .text-subscribe {
+        font-size: 10px;
+    }
+
+    .email input {
+        width: 140px;
+        font-size: 10px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .email button {
+        width: 100px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .menu-footer {
+        column-gap: 14px;
+    }
+
+    .footer-menu {
+        font-size: 8px;
+    }
+
+    .socmed-menu {
+        font-size: 14px;
+    }
+
+    .pkesatu {
+        font-size: 8px;
+    }
+
+    .pkedua {
+        font-size: 6px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+}

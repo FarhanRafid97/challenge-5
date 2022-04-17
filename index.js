@@ -9,5 +9,5 @@ app.use(express.json());
 
 app.use(router);
 
-const port = 8000;
+const port = 3000;
 app.listen(port, () => console.log(`port berjalan ${port}`));

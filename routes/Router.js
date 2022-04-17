@@ -8,11 +8,15 @@ import {
   dataJson,
   loginValidation,
   logOutUser,
+  gamePage,
+  homePage,
   indexPage,
 } from '../controllers/Users.js';
 
 const router = express.Router();
 router.get('/', indexPage);
+router.get('/home', loginValidation, homePage);
+router.get('/game', loginValidation, gamePage);
 router.get('/data', loginValidation, getData);
 router.get('/register', registerUser);
 router.post('/register', postRegisterUser);
